@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="shortcut icon" type="x-icon" href="./images/logo.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Yummy</title>
+
+      <link rel="stylesheet" href="./css/all.min.css" />
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/signUp.css" />
+   </head>
+   <body>
+    
+      <div class="setting">
+
+
+         <div class="links">
+            
+           <div class="inner-links ">
+            <p><a onclick="Search()">Search</a></p>
+            <p class="pt-3"><a onclick="Categories()">Categories</a></p>
+            <p class="pt-3"><a onclick="Area()">Area</a></p>
+            <p class="pt-3"><a onclick="Ingredients()">Ingredients</a></p>
+            <p class="pt-3"><a onclick="ContactUs()">Contact Us</a></p>
+           </div>
+
+           <div class="footer-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+            <p>Copyright Â© 2019 All Rights</p>
+           </div>
+         </div>
+
+         <div class="close text-center">
+            <div class="start ">
+               <!-- <img class="logo" src="./images/logo.png" class="w-100" alt="" srcset=""> -->
+               <i class="fa-solid fa-face-grin-beam-sweat"></i>
+            </div>
+            
+            <div class="middle ">
+               <i id="bars-icon" class="fa-solid fa-bars "></i>
+               <i id="close-icon" class="fa-solid fa-x  d-none"></i>
+            </div>
+
+            <div class="end">
+               <i class="fa-solid fa-globe"></i>
+               <i class="fa-solid fa-share-nodes"></i>
+              
+            </div>
+            
+         </div>
+         
+      </div>
+     
+      <div class="loading">
+         <span class="loader"></span>
+        </div>
+        
+      <div class="container w-75 ">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <input oninput="validationName(),submit()" type="text" id="userName" placeholder="Enter Your Name" class="form-control is-invalid ">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messageName">Special characters and numbers not allowed (ex.Khaled Magdy)</p>
+            </div>
+
+            <div class="col-md-6">
+                <input oninput="validationEmail(),submit()" type="text" id="userEmail" placeholder="Enter Your Email" class="form-control is-invalid">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messageEmail">Email not valid *exemple@yyy.zzz</p>
+            </div>
+
+            <div class="col-md-6">
+                <input oninput="validationPhone(),submit()" type="text" id="userPhone" placeholder="Enter Your Phone" class="form-control is-invalid">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messagePhone">Enter valid Phone Number (ex. 01100112233)</p>
+            </div>
+
+            <div class="col-md-6">
+                <input oninput="validationAge(),submit()" type="number" id="userAge" placeholder="Enter Your Age" class="form-control is-invalid">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messageAge">Enter valid age</p>
+            </div>
+
+
+            <div class="col-md-6">
+                <input oninput="validationPassword(),submit()" type="password" id="userPassword" placeholder="Enter Your Password" class="form-control is-invalid">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messagePassword">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+            </div>
+
+            <div class="col-md-6">
+                <input oninput="validationRePassword(),submit()" type="password" id="userRePassword" placeholder="Repassword" class="form-control is-invalid">
+                <p class="alert alert-danger mt-2 text-center d-none " id="messageRePassword">Enter valid repassword</p>
+            </div>
+
+            <button id="submitButton" class="btn btn-outline-danger w-25 mx-auto disabled">Submit</button>
+        </div>
+
+
+
+      </div>
+      <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/signUp.js"></script>
+   </body>
+</html>

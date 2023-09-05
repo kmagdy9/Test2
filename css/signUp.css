@@ -1,0 +1,178 @@
+body{
+    background-color: #0D0D0D ;
+ }
+.container{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/************************Loader****************************/
+
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 
+    2em -2em 0 0em, 3em 0 0 -1em, 
+    2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 
+    2em -2em 0 0, 3em 0 0 0.2em, 
+    2em 2em 0 0, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+     -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+     -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+     3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+     -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+  
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     z-index: 999999999;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/************************Settings************************/
+.setting{
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 999999;
+  display: flex;
+  white-space: nowrap;
+}
+
+.setting .links{
+
+  
+  background-color: black;
+  display: none;
+  position: relative;
+  
+}
+
+.setting .links .inner-links{
+ padding-right: 115px;
+ padding-left: 10px;
+ padding-top: 20px;
+}
+
+.setting .links .inner-links a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.setting .links .inner-links a:hover{
+  color: darkred;
+}
+
+.setting .links .footer-links{
+  position: absolute;
+  bottom: 0px;
+}
+.setting .links .footer-links i{
+  
+  color: white;
+  cursor: pointer;
+}
+
+.setting .links .footer-links p{
+  
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.setting .close i{
+  /* background-color: black; */
+  padding: 10px;
+  color: white;
+}
+
+
+.setting .close{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: min-content; */
+  
+}
+
+.setting .close i{
+color: black;
+cursor: pointer;
+  
+}
+
+.setting .close .middle{
+font-size: 32px;
+}
+
+.setting .close .end{
+  display: flex;
+  flex-direction: column;
+}
+
+.setting .close .start i{
+  font-size: 22px;
+  color: yellow;
+  }

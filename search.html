@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="shortcut icon" type="x-icon" href="./images/logo.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Yummy</title>
+
+      <link rel="stylesheet" href="./css/all.min.css" />
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/search.css" />
+   </head>
+   <body>
+    
+      <div class="setting">
+
+
+         <div class="links">
+            
+           <div class="inner-links ">
+            <p><a onclick="Search()">Search</a></p>
+            <p class="pt-3"><a onclick="Categories()">Categories</a></p>
+            <p class="pt-3"><a onclick="Area()">Area</a></p>
+            <p class="pt-3"><a onclick="Ingredients()">Ingredients</a></p>
+            <p class="pt-3"><a onclick="ContactUs()">Contact Us</a></p>
+           </div>
+
+           <div class="footer-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+            <p>Copyright Â© 2019 All Rights</p>
+           </div>
+         </div>
+
+         <div class="close text-center">
+            <div class="start ">
+               <!-- <img class="logo" src="./images/logo.png" class="w-100" alt="" srcset=""> -->
+               <i class="fa-solid fa-face-grin-beam-sweat"></i>
+            </div>
+            
+            <div class="middle ">
+               <i id="bars-icon" class="fa-solid fa-bars "></i>
+               <i id="close-icon" class="fa-solid fa-x  d-none"></i>
+            </div>
+
+            <div class="end">
+               <i class="fa-solid fa-globe"></i>
+               <i class="fa-solid fa-share-nodes"></i>
+              
+            </div>
+            
+         </div>
+         
+      </div>
+
+
+      <div class="loading">
+         <span class="loader"></span>
+        </div>
+        
+      <div class="container search w-75 pt-4 ">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <input oninput="search()" id="searchInput" type="text" placeholder="Search By Name" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input oninput="searchOne()" id="searchInputOne" maxlength="1" type="text" placeholder="Searcg By First Letter" class="form-control">
+            </div>
+        </div>
+
+      </div>
+
+
+      <section class="container meals pt-5 pb-5">
+
+        <div class="row g-3" id="colsData">
+        </div>
+     </section>
+
+     
+     <div class="container instructions  pb-2">
+
+      <div class="row" id="colsInstructions">
+
+         
+      </div>
+  </div>
+
+
+
+       <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/search.js"></script>
+   </body>
+</html>
