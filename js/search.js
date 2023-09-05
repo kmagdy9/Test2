@@ -17,7 +17,7 @@ async function getApiData(meal){
 
   colsData.addEventListener("click",function(e){
    
-    mealName=$(e.target).find('h2').text();
+    mealName=e.target.innerHTML;
     console.log(mealName);
     getApiInstructions(mealName)
     searchInput.classList.add("d-none");
